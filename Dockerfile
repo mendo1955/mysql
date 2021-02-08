@@ -3,3 +3,4 @@ COPY ./conf/ /etc/mysql/
 COPY ./sql/ /docker-entrypoint-initdb.d/
 EXPOSE 8889
 ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_SERVICE_HOST=mysql
